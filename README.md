@@ -67,8 +67,8 @@ Please see our contribution instructions [CONTRIBUTING](CONTRIBUTING.md).
 
 # Some old figures
 
-![](./doc/nwm_vs_bmi_da.png)
+![](./doc/readme_figs/nwm_vs_bmi_da.png)
 This figure describes the difference between the naive NWM data assimilation method and this BMI-based general data assimilation framework.
-![](./doc/buckets.png)
-![](./doc/logic_soil.png)
-![](./doc/soil_and_giuh.png)
+![](./doc/readme_figs/buckets.png)
+![](./doc/readme_figs/logic_soil.png)
+![](./doc/readme_figs/soil_and_giuh.png)
