@@ -1,0 +1,40 @@
+{
+    "forcing_file": ".input/forcing/cat-3400560.csv",
+    "partition_scheme": "Schaake",
+    "max_gw_storage": 148.389556885,
+    "Cgw": 0.0018,
+    "expon": 6.0,
+    "gw_storage": 0.05,
+    "alpha_fc": 0.33,
+    "soil_storage": 0.05,
+    "K_nash": 0.03,
+    "K_lf": 0.01,
+    "nash_storage": [
+        0.0,
+        0.0
+    ],
+    "giuh_ordinates": [
+        1.0,
+        0.0
+    ],
+    "num_timesteps": 1.0,
+    "verbosity": 1.0,
+    "DEBUG": 0.0,
+    "refkdt": 3.538438081741333,
+    "catchment_area_km2": 12.86819908192259,
+    "soil_params": {
+        "D": 2.0,
+        "bb": 4.010045051574707,
+        "satdk": 1.4960983934753409e-06,
+        "satpsi": 0.0524925172117327,
+        "slop": 0.1189724653959274,
+        "smcmax": 0.4486748555626283,
+        "wltsmc": 0.0784473715075076,
+        "expon": 1.0,
+        "expon_secondary": 0.005
+    },
+    "soil_scheme": "ode",
+    "stand_alone": 1,
+    "unit_test": 1,
+    "compare_results_file": "cat58_test_compare.csv"
+}
