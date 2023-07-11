@@ -66,26 +66,7 @@ class ETRCalculator:
         relative_humidity = (specific_humidity / (1 - specific_humidity)) * (p_sat / pressure) * 100
         return relative_humidity
     
-    
-    def calculate_relative_humidity1(self,row):
-        specific_humidity = row["SPFH_2maboveground"]
-        temperature = row["TMP_2maboveground"]
-        p_sat = 6.112 * math.exp((17.67 * (temperature - 273.15)) / (temperature - 273.15 + 243.5))
-        vapor_pressure = specific_humidity * row["PRES_surface"] / (0.622 + specific_humidity)
-        relative_humidity = (vapor_pressure / p_sat) * 100
-        return relative_humidity
-
-
-    def calculate_actual_vapor_pressure1(self, row):
-        temperature = row["TMP_2maboveground"] - 273.15  # Temperature in Celsius
-        specific_humidity = row["SPFH_2maboveground"]  # Specific humidity
-        pressure = row["PRES_surface"]  # Atmospheric pressure in pascals
-
-        actual_vapor_pressure = specific_humidity * pressure / (0.622 + 0.378 * specific_humidity)
-        return actual_vapor_pressure
-        
-                
-        
+                        
     def calculate_actual_vapor_pressure(self, row):
         specific_humidity = row["SPFH_2maboveground"]
         temperature_kelvin = row["TMP_2maboveground"]
