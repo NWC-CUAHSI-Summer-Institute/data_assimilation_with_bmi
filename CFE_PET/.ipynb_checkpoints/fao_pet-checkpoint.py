@@ -40,9 +40,9 @@ class ETRCalculator:
         self.df["utc_hour"] = self.df.index.tz_localize(None).hour
         
         data = {
-            'R_s': self.df["DSWRF_surface"] * 0.0036,
-            'T_mean': self.df["TMP_2maboveground"] - 273.15,
-            'e_a': self.df["Actual_Vapor_Pressure"] / 1000,
+            'R_s': self.df["DSWRF_surface"] * 0.0036,       
+            'T_mean': self.df["TMP_2maboveground"] - 273.15, #C
+            'e_a': self.df["Actual_Vapor_Pressure"] / 1000,  #Kpa
             'RH_mean': self.df["Relative_Humidity"],
             'date': self.df.index
         }
