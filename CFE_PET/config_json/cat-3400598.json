@@ -1,0 +1,40 @@
+{
+    "forcing_file": "./data_assimilation_with_bmi/Carmel_inputs_January2017/config_json_updated/cat-3400598.csv",
+    "partition_scheme": "Schaake",
+    "max_gw_storage": 148.389556885,
+    "Cgw": 0.0018,
+    "expon": 6.0,
+    "gw_storage": 0.05,
+    "alpha_fc": 0.33,
+    "soil_storage": 0.05,
+    "K_nash": 0.03,
+    "K_lf": 0.01,
+    "nash_storage": [
+        0.0,
+        0.0
+    ],
+    "giuh_ordinates": [
+        1.0,
+        0.0
+    ],
+    "num_timesteps": 1.0,
+    "verbosity": 1.0,
+    "DEBUG": 0.0,
+    "refkdt": 3.4583948247783605,
+    "catchment_area_km2": 7.966800166472495,
+    "soil_params": {
+        "D": 2.0,
+        "bb": 2.3265130519866943,
+        "satdk": 7.006868399713918e-08,
+        "satpsi": 0.0162108474895909,
+        "slop": 0.1208604535496454,
+        "smcmax": 0.4316365874899716,
+        "wltsmc": 0.0474720264085883,
+        "expon": 1.0,
+        "expon_secondary": 0.005
+    },
+    "soil_scheme": "ode",
+    "stand_alone": 1,
+    "unit_test": 1,
+    "compare_results_file": "cat58_test_compare.csv"
+}

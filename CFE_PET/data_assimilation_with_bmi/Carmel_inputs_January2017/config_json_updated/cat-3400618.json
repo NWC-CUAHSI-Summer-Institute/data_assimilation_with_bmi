@@ -1,0 +1,39 @@
+{
+    "forcing_file": "./Carmel_inputs_January_2017/forcingscat-3400618.csv",
+    "partition_scheme": "Schaake",
+    "max_gw_storage": 148.389556885,
+    "Cgw": 0.0018,
+    "expon": 6.0,
+    "gw_storage": 0.05,
+    "alpha_fc": 0.33,
+    "soil_storage": 0.05,
+    "K_nash": 0.03,
+    "K_lf": 0.01,
+    "nash_storage": [
+        0.0,
+        0.0
+    ],
+    "giuh_ordinates": [
+        1.0,
+        0.0
+    ],
+    "num_timesteps": 1.0,
+    "verbosity": 1.0,
+    "DEBUG": 0.0,
+    "refkdt": 3.538438081741333,
+    "catchment_area_km2": 0.8248507830269336,
+    "soil_params": {
+        "D": 2.0,
+        "bb": 2.3265130519866943,
+        "satdk": 1.295958625114258e-07,
+        "satpsi": 0.0299828488649865,
+        "slop": 0.1189724653959274,
+        "smcmax": 0.4313718974590301,
+        "wltsmc": 0.0469999983906745,
+        "expon": 1.0,
+        "expon_secondary": 0.005
+    },
+    "soil_scheme": "ode",
+    "stand_alone": 1,
+    "compare_results_file": "cat58_test_compare.csv"
+}
