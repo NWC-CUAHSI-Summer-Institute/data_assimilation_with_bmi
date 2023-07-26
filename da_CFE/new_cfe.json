@@ -1,0 +1,43 @@
+{
+    "forcing_file": "./forcing_carmel250_2016.csv",
+    "partition_scheme": "Schaake",
+    "max_gw_storage": 0.249,
+    "Cgw": 0.0004094059236837663,
+    "expon": 1.01,
+    "gw_storage": 0,
+    "alpha_fc": 0.33,
+    "soil_storage": 0.1,
+    "K_nash": 0.889575997857985,
+    "K_lf": 0.5141940975059861,
+    "nash_storage": [
+        0.0,
+        0.0
+    ],
+    "giuh_ordinates": [
+        1,
+        0
+    ],
+    "num_timesteps": 1.0,
+    "verbosity": 1.0,
+    "DEBUG": 0.0,
+    "refkdt": 3.538438081741333,
+    "catchment_area_km2": 660,
+    "soil_params": {
+        "D": 2.0,
+        "bb": 21.20269819238547,
+        "satdk": 0.000726,
+        "satpsi": 0.0256709532906967,
+        "slop": 0.1189724653959274,
+        "smcmax": 0.9394097311639178,
+        "wltsmc": 0.1030000001192092,
+        "expon": 1.0,
+        "expon_secondary": 0.005
+    },
+    "soil_scheme": "classic",
+    "stand_alone": 1,
+    "unit_test": 1,
+    "compare_results_file": "cat58_test_compare.csv",
+    "satdk": 0.0006369082990440306,
+    "smcmax": 0.44220726249574627,
+    "slop": 0.9556577113779303
+}
