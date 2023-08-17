@@ -1,0 +1,3 @@
+[submodule "cfe_py"]
+	path = cfe_py
+	url = https://github.com/NWC-CUAHSI-Summer-Institute/cfe_py.git
