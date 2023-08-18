@@ -1,5 +1,5 @@
 {
-    "forcing_file": "./forcing_carmel250_2016.csv",
+    "forcing_file": "../forcing/forcing_carmel250_2016.csv",
     "partition_scheme": "Schaake",
     "max_gw_storage": 0.249,
     "Cgw": 0.0004094059236837663,

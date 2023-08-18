@@ -1,21 +1,19 @@
+# Data Assimilation for Nextgen with BMI
+
+This repository contains two methods of data assimilation currently under development with potential applications for the Nextgen Water Modeling Framework Prototype ([https://github.com/NOAA-OWP/ngen](https://github.com/NOAA-OWP/ngen)).
+
+- Data assimilation for the Conceptual Functional Equivalent model (CFE; [https://github.com/NOAA-OWP/cfe](https://github.com/NOAA-OWP/cfe)). This method uses observed streamflow values to update the states of CFE, which improves the rainfall-runoff estimate from the hydrofabric catchments. This method has been developed by groups during the 2022 and 2023 Summer Institute.
+- Data assimilation for the routing network. This method updates the streamflow across the entire network of routing links. This method has been developed by the 2023 Summer Institue.
+
 ## Installation
 
-### Within the Nextgen Frameowork
-The first thing to do is install Nextgen. The next thing to do is ...  
-
-### In stand alone version
-Install any dependencies (see below). Then open the `run\_test.ipynb` and shift-click through the notebook.
-
-----
-
-# General Data Assimilation with BMI
-
-Streamflow predictions derived from a hydrologic model are hampered by manysources of errors, including uncertainties in meteorological inputs and inadequaterepresentation of natural systems’ physical processes. One way to reduce the impact of theseuncertainties on models’ accuracy and improve streamflow predictions is to implement DataAssimilation (DA) methods. DA methods use streamflow observations to update models’ statevariables to improve streamflow predictions. This study aimed to build and demonstrate DA asa module ready for use in the Next Generation Water Resources Modeling Framework(Nextgen). All components of this module conform to the Basic Model Interface (BMI)standards to be compatible with the Nextgen framework. This includes a BMI-enabledpython-module that uses the Ensemble Kalman Filter (EnKF) to derive state transitionfunctions for other Nextgen modules. An additional BMI-enabled python-module was alsocreated to collect USGS streamflow observations to assimilate streamflow predictions. Thedeveloped EnKF and USGS modules were tested using streamflow simulations from theBMI-enabled Conceptual Functional Equivalent (CFE) version 2.1 of the National WaterModel (NWM). The existing BMI-enabled CFE was used to create a new version of theBMI-enabled CFE with added perturbations to produce an ensemble of streamflowsimulations required to run the EnKF method. The DA module was tested on synthetic dataand a real-world example at a USGS gauged basin. The outcomes showed that implementingthe EnKF DA method improved the CFE streamflow predictions. The difference between theassimilated streamflow predictions and USGS streamflow observations was smaller than thedifference between original CFE simulations and USGS observations. When compared to theUSGS streamflow observations, the assimilated CFE streamflow predictions improvedcorrelation coefficient (r), Kling-Gupta Efficiency (KGE), Nash-Sutcliffe Efficiency (NSE),and percent bias (PBIAS) statistics.
+There are two main notebooks to run the DA methods.
+- `DA-Routing/carmel_muskingum_cunge.ipynb`
+- `example_run_da_CFE/my_run.ipynb`
 
 ## Dependencies
 
-There are two paths to run this software, and they have separate dependencies.  
-There will be an environment.yml and a environment.txt to run this code in stand alone version with Python.
+There are quite a few libraries that you'll need to install, and you can do so with the command: `pip install -r requirements.txt`
 
 ## Installation
 
@@ -35,7 +33,8 @@ If the software will include automated tests.
 
 ## Known issues
 
-This repository has not code in it yet.
+* Not exactly sure where to host code for different models/modules that will be used in the examples.
+* CFE data assimilation is not quite stable, need to work out some sensitivity issues.
 
 ## Getting help
 
@@ -58,9 +57,11 @@ Please see our contribution instructions [CONTRIBUTING](CONTRIBUTING.md).
 
 ## Credits and references
 
-1. Deardorff E., A. Modaresi Rad, et al. (2022). National Water Center Innovators Program - Summer Institute, CUAHSI Technical Report, HydroShare, http://www.hydroshare.org/resource/096e7badabb44c9f8c29751098f83afa
-2. Wolkeba F. T., K. O. Ekpetere, M. S. Abualqumboz , and Z. J. Butler (2022). Data assimilation of USGS streamflow in the Nextgen Framework
-3. Abualqumboz et al. 2022. “Data Assimilation of USGS Streamflow Data in the Nextgen Framework”. AGU Fall Meeting
+* Timilsina et al. 2023. “Data Assimilation in the Nextgen Framework for Improved Streamflow Predictions”. Upcoming 2023 AGU Fall Meeting.
+* Foroumandi et al., 2023. “Development of an Ensemble Hydrologic Data Assimilation within NextGen Framework”. Upcoming 2023 AGU Fall Meeting.
+* Deardorff E., A. Modaresi Rad, et al. (2022). National Water Center Innovators Program - Summer Institute, CUAHSI Technical Report, HydroShare, http://www.hydroshare.org/resource/096e7badabb44c9f8c29751098f83afa
+* Wolkeba F. T., K. O. Ekpetere, M. S. Abualqumboz , and Z. J. Butler (2022). Data assimilation of USGS streamflow in the Nextgen Framework
+* Abualqumboz et al. 2022. “Data Assimilation of USGS Streamflow Data in the Nextgen Framework”. AGU Fall Meeting
 
 
 
