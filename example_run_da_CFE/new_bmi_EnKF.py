@@ -1,7 +1,6 @@
 from bmipy import Bmi
 import numpy as np
 import json
-from new_EnKF import EnKF
 
 
 class BMIEnKF(Bmi):

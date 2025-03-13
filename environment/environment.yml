@@ -1,0 +1,26 @@
+name: bmi_da
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - dataretrieval
+  - bmipy
+  - hydrostats
+  - numpy
+  - scipy
+  - pandas
+  - xarray
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyterlab
+  - tqdm
+  - netCDF4
+  - dask
+  - numba
+  - pip
+  - pip:
+      - pyDA
+      - hydroeval
+      - eto
