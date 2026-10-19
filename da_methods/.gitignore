@@ -1,0 +1,11 @@
+*.png
+!figures/**/*.png
+!**/figures/**/*.png
+!results/**/*.png
+*.pdf
+*.pptx
+__pycache__/
+~$*
+poster_kriging_troute.md
+poster_kriging_troute_v2.md
+poster_f1_vs_f2.md

@@ -899,11 +899,11 @@ class BMI_CFE():
 #        val = self.get_value_ptr(name)
 #        val.flat[inds] = src
 
-        #JMFrame: chances are that the index will be zero, so let's include that logic
+        # index may be zero; include that logic
         if np.array(self.get_value(name)).flatten().shape[0] == 1:
             self.set_value(name, src)
         else:
-            # JMFrame: Need to set the value with the updated array with new index value
+            # set value with updated array at new index
             val = self.get_value_ptr(name)
             for i in inds.shape:
                 val.flatten()[inds[i]] = src[i]
@@ -921,7 +921,7 @@ class BMI_CFE():
         int
             Size of data array in bytes.
         """
-        # JMFrame NOTE: Had to import sys for this function
+        # sys imported for this function
         return sys.getsizeof(self.get_value_ptr(long_var_name))
 
     #------------------------------------------------------------ 
@@ -940,7 +940,7 @@ class BMI_CFE():
         array_like
             Values at indices.
         """
-        #JMFrame: chances are that the index will be zero, so let's include that logic
+        # index may be zero; include that logic
         if np.array(self.get_value(var_name)).flatten().shape[0] == 1:
             return self.get_value(var_name)
         else:
